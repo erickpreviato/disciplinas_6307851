@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'DisciplinaController@Index');
+Route::resource('disciplinas', 'DisciplinaController');
